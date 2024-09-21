@@ -1,0 +1,33 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+double convertToMPH(int min, int sec)
+{
+    double total = min*60 + sec;
+    double mph = 3600/total
+    return mph;
+}
+
+
+int main(){
+    //mpl(minutes per mile),spl(seconds per mile),kph(kilometers per hour)
+    double mpl,spl,kph;
+    cout<<"\nEnter the minutes per mile of your pace:";
+    cin>>mpl;
+    if(mpl<0)
+    }
+cout<<"\nEnter the seconds per mile of your pace:";
+cin>>spl;
+if(spl<0 || spl>59)
+{
+    cout<<"\nEnter a value between 0-59:";
+    cin>>spl;
+    }
+    cout<<"\nEnter the kilometers per hour:";
+    cin>>kph;
+
+    cout<<"\n"<<mpl<<":"<<spl<<"mile is:"<<fixed<<setprecision(1)<<convertToMPH(mpl,spl)<<"MPH"<<endl;
+    cout<<kph<<"KPH is"<<fixed<<setprecision(1)<<convertToMPH(kph)<<"MPH"<<endl;
+    return 0;
+    }
